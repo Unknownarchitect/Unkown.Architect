@@ -73,5 +73,5 @@ ul li a {
 }
 
 ul li:hover ~ .cursor {
-  transform: scale(1);
+  transform: scale(6);
 }
