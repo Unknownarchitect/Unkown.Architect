@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contacts</title>
+    <link rel="stylesheet" href="contacts.css">
+    <div class="bottoni">
+      <ul>
+          <li><a href="Homepage.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Mail:unknown.architec@gmail.com</a></li>
+      </ul>
+      <div class="cursor"></div>
+  </div>
+  <script>
+      const cursor = document.querySelector('.cursor');
+      document.addEventListener('mousemove', (e) => {
+          cursor.style.left = e.pageX + 'px';
+          cursor.style.top = e.pageY + 'px';
+      });
+
+      document.querySelectorAll('ul li a').forEach(item => {
+          item.addEventListener('mouseover', () => {
+              cursor.style.transform = 'scale(6)';
+          });
+          item.addEventListener('mouseout', () => {
+              cursor.style.transform = 'scale(1)';
+          });
+      });
+  </script>
+
+  </head>
+  <body>
+    
+  </body>
+</html>
